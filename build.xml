@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<project name="plugins" default="build.all">
+
+    <!--
+        ===================================================================
+         Load the project's properties
+        ===================================================================
+    -->
+
+    <!--
+        ===================================================================
+          The project's target definitions
+        ===================================================================
+    -->
+    <target name="clean.all" depends="clean.plugins"/>
+
+    <!--
+        ===================================================================
+          The project's targets
+        ===================================================================
+    -->
+
+    <target name="clean.plugins">
+          <delete includeemptydirs="true">
+              <fileset dir=".">
+                  <include name="**/*"/>
+                  <exclude name="build.xml"/>
+              </fileset>
+          </delete>
+    </target>
+
+
+    <target name="build.all">
+        <ant dir="core_plugin"  target="build.all" inheritAll="false"/>
+        <ant dir="panel_plugin"  target="build.all" inheritAll="false"/>
+    </target>
+
+
+</project>
