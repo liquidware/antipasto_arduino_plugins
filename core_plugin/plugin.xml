@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 1.0" "http://jpf.sourceforge.net/plugin_1_0.dtd">
+<plugin id="com.plugin.core" version="0.0.4"
+	class="com.plugin.PluginCore">
+	<runtime>
+		<library id="core" path="classes/" type="code">
+			<export prefix="*" />
+		</library>
+	</runtime>
+	<extension-point id="Section">
+		<parameter-def id="class"/>
+		<parameter-def id="name"/>
+	</extension-point>
+</plugin>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 1.0" "http://jpf.sourceforge.net/plugin_1_0.dtd">
+<plugin id="com.bitcaps.panel" version="0.0.1"
+	class="com.bitcaps.PanelPlugin">	
+	<requires>
+		<import plugin-id="com.plugin.core"/>
+	</requires>
+	<runtime>
+		<library id="panel" path="classes/" type="code">
+			<export prefix="*" />
+		</library>
+	</runtime>
+	<extension plugin-id="com.plugin.core" point-id="Section" id="pluginSection">
+		<parameter id="class" value="com.bitcaps.PanelPlugin"/>
+		<parameter id="name" value="Plug"/>
+	</extension>
+
+
+</plugin>
