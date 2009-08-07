@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.util.*;
 import java.awt.event.*;
 
-public class PanelPlugin extends PluginBase implements IPluginSection{
+public class PanelPlugin extends PluginBase{
 	
 	public JLabel statuslabel;
 	public JButton closeme;
