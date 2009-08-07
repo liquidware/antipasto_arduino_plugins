@@ -3,13 +3,14 @@ package com.bitcaps;
 import org.java.plugin.Plugin;
 
 import antipasto.Plugins.Api.*;
+import antipasto.Plugins.*;
 
 import java.awt.*; 
 import javax.swing.*; 
 import java.util.*;
 import java.awt.event.*;
 
-public class PanelPlugin extends Plugin implements IPluginSection{
+public class PanelPlugin extends PluginBase implements IPluginSection{
 	
 	public JLabel statuslabel;
 	public JButton closeme;
@@ -24,6 +25,15 @@ public class PanelPlugin extends Plugin implements IPluginSection{
 	protected void doStop() throws Exception {
 		System.out.println("PANEL ENDED");		
 	} 
+
+	protected void postInit()
+	{
+		System.out.println("POST INIT");
+	}
+
+	public void handleEvent(EventObject event){
+		System.out.println("HANDLED:"+event.toString());
+	}
 
 	void initPanel(){
 		JFrame jf = new JFrame("I am a Plugin");
