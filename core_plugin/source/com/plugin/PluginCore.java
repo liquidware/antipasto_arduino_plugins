@@ -1,5 +1,7 @@
 package com.plugin;
 
+import antipasto.Plugins.Api.*;
+import antipasto.Plugins.*;
 
 import org.java.plugin.ObjectFactory;
 import org.java.plugin.PluginManager;
@@ -13,9 +15,7 @@ import org.java.plugin.PluginLifecycleException;
 import org.java.plugin.util.ExtendedProperties;
 
 
-import org.java.plugin.Plugin;
-
-public class PluginCore extends Plugin {
+public class PluginCore extends PluginBase {
 
 	protected void doStart() throws Exception {
 		System.out.println("CORE STARTED");		

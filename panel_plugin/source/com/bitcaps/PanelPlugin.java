@@ -1,7 +1,5 @@
 package com.bitcaps;
 
-import org.java.plugin.Plugin;
-
 import antipasto.Plugins.Api.*;
 import antipasto.Plugins.*;
 
