@@ -53,8 +53,8 @@ public class PanelPlugin extends PluginBase{
 
 		jf.setSize(300,100);
 		//pack();
-		jf.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-		jf.setVisible(true);
+		jf.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		jf.setVisible(false);
 
 		jf.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
